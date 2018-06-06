@@ -11,7 +11,7 @@ package hilosclase;
  */
 public class Cajero extends Thread{
     private String nombre;
-    private Cliente cliente,
+    private Cliente cliente;
     private Transaccion trans;
 
     public Cajero() {
