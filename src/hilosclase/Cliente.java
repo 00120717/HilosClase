@@ -30,11 +30,11 @@ public class Cliente {
         this.nombre = nombre;
     }
 
-    public int[] getTransacciones() {
+    public  Transaccion[] getTransacciones() {
         return transacciones;
     }
 
-    public void setTransacciones(int[] transacciones) {
+    public void setTransacciones(Transaccion[] transacciones) {
         this.transacciones = transacciones;
     }
     
