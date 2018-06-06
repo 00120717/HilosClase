@@ -20,7 +20,7 @@ public class Cajero extends Thread{
     public Cajero(String nombre, Cliente cliente, Transaccion trans) {
         this.nombre = nombre;
         this.cliente = cliente;
-        this.trans = tiempoInicio;
+        this.trans = trans;
     }
 
     public String getNombre() {
@@ -39,12 +39,12 @@ public class Cajero extends Thread{
         this.cliente = cliente;
     }
 
-    public long getTiempoInicio() {
+    public Transaccion getTiempoInicio() {
         return trans;
     }
 
     public void setTiempoInicio(long tiempoInicio) {
-        this.trans = tiempoInicio;
+        this.trans = trans;
     }
      
     public void run(){
